@@ -1,6 +1,6 @@
 ﻿namespace GDI_
 {
-    partial class Form1
+    partial class FormClock
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pictureBoxClock = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClock)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBoxClock
+            // 
+            this.pictureBoxClock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxClock.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxClock.Name = "pictureBoxClock";
+            this.pictureBoxClock.Size = new System.Drawing.Size(284, 261);
+            this.pictureBoxClock.TabIndex = 0;
+            this.pictureBoxClock.TabStop = false;
+            // 
+            // FormClock
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.pictureBoxClock);
+            this.Name = "FormClock";
+            this.Text = "Clock";
+            this.Load += new System.EventHandler(this.FormClock_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClock)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBoxClock;
     }
 }
 
